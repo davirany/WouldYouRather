@@ -82,9 +82,7 @@ export class NewPoll extends Component {
                 onChange={this.handleChange}
                 required
               />
-              <Form.Button positive size="tiny" fluid disabled={disabled}>
-                Submit
-              </Form.Button>
+              <Form.Button content="Submit" color="red" size="tiny" disabled={disabled} />
             </Form>
           </Grid.Column>
         </Grid>

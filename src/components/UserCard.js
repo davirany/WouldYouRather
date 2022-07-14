@@ -50,7 +50,7 @@ export class UserCard extends Component {
       return <Redirect to="/questions/bad_id" />;
     }
 
-    const tabColor = unanswered === true ? colors.green : colors.blue;
+    const tabColor = unanswered === true ? colors.red : colors.blue;
     const borderTop =
       unanswered === null
         ? `1px solid ${colors.grey}`

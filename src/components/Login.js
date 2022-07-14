@@ -5,7 +5,6 @@ import {
   Segment,
   Grid,
   Header,
-  Image,
   Form,
   Loader,
   Dimmer
@@ -26,16 +25,10 @@ export class Login extends Component {
         <Segment.Group>
           <LoginHeader />
           <LoginGridLayout
-            image={<BrandImage />}
             form={<ConnectedLoginForm onLoading={this.handleLoading} />}
             loading={this.state.loading}
           />
         </Segment.Group>
-        <footer className="footer">
-          <a href="https://www.freepik.com/free-photos-vectors/design">
-            Avatar characters created by freepik - www.freepik.com
-          </a>
-        </footer>
       </Fragment>
     );
   }
@@ -43,8 +36,7 @@ export class Login extends Component {
 
 const LoginHeader = () => (
   <Header as="h4" block attached="top" textAlign="center">
-    <Header.Content>Welcome to the Would You Rather App!</Header.Content>
-    <Header.Subheader>Please sign in to continue</Header.Subheader>
+    <Header.Subheader>Welcome to the Would You Rather App</Header.Subheader>
   </Header>
 );
 
@@ -65,10 +57,6 @@ const LoginGridLayout = ({ image, form, loading }) => (
       </Grid.Row>
     </Grid>
   </div>
-);
-
-const BrandImage = () => (
-  <Image src="/images/avatars/animals.png" size="medium" centered />
 );
 
 class LoginForm extends Component {
@@ -107,7 +95,7 @@ class LoginForm extends Component {
 
     return (
       <Form onSubmit={this.handleSubmit}>
-        <Header as="h2" color="green">
+        <Header as="h2" color="red">
           Sign In
         </Header>
         <Form.Dropdown
@@ -120,7 +108,7 @@ class LoginForm extends Component {
           onChange={this.onChange}
           required
         />
-        <Form.Button content="Login" positive disabled={disabled} fluid />
+        <Form.Button content="Login" color="red" disabled={disabled} />
       </Form>
     );
   }

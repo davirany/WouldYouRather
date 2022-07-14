@@ -1,6 +1,8 @@
-html, body {
+html,
+body {
   font-size: 16px;
 }
+
 body {
   margin: 0;
   padding: 0;
@@ -29,32 +31,40 @@ code {
   border-top-width: 1px;
   border-color: #d4d4d5;
 }
+
 .tab .ui.tabular.menu .active.item {
   background: none #fff;
 }
+
 /* poll quesion page */
 .ui.radio.checkbox {
   margin-left: 20px;
   margin-bottom: 4px;
 }
+
 /* poll results page */
 i.compact.icon {
-  margin: 0 .5em 0 0!important;
+  margin: 0 .5em 0 0 !important;
 }
+
 .ui.ribbon.label.vote {
   margin-bottom: 8px;
 }
+
 /* login page row spacing */
 .footer {
   text-align: center;
   font-size: .85em;
 }
+
 .ui.grid>.row.login:first-of-type {
   padding-top: 1em;
 }
+
 .ui.grid>.row.login:last-of-type {
   padding-bottom: 1em;
 }
+
 .ui.grid>.row.login {
   padding-top: .5em;
   padding-bottom: .5em;
